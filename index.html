@@ -23,8 +23,10 @@
   <nav >
     <div  id="nav-section" class="navbar  fixed  h-[90px]  flex flex-row justify-between  ">
       <div class="ml-6 ">
-          <a id="" class="btn text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Blog</a>
+          <button id="blog-section" class=" px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Blog</button>
+          <button id="home-section" class="hidden px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Home</button>
         </div>
+
       <div class=" w-[265px]  flex justify-between flex-row items-center  ">
       <img class="w-[48px] h-[48px] " src="assets/logo.png" alt="this is logo image">
        <h3 class="font-bold text-[20px] text-[#111111]">Donate Bangladesh</h3>
@@ -38,16 +40,27 @@
    
   </nav>
   <div id="nav-border" class=" fixed  top-[88px] p-8 w-full flex justify-center space-x-2 ">
-    <button id="btn-show-donation" class="btn btn-lg active:bg-[#B4F461] ">Donation</button>
-    <button id="btn-show-history" class="btn btn-lg">History</button>
+    <button id="btn-show-donation" class="bg-[#B4F461] text-[#111111] text-xl font-semibold rounded-lg px-8 py-4 border-2 ">Donation</button>
+    <button id="btn-show-history" class=" text-xl font-semibold rounded-lg px-8 py-4 border-2  ">History</button>
   </div>
   
 </header>
 
 <!-- main section -->
  <main class="flex justify-center pt-36 " >
+  <!-- home page -->
+
+   <section id="home-page-section" class="hidden w-[80%] h-[100%] flex flex-col mt-20">
+     <div class="container border-2">
+      <details>
+          <summary>Click Me</summary>
+          <p>Eita hoche lekha!</p>
+      </details>
+      
+  </div>
+   </section>
   <!-- donation section -->
-    <section id="donation-section" class=" w-[80%] h-[100%] flex flex-col mt-16 ">
+    <section id="donation-section" class="w-[80%] h-[100%] flex flex-col mt-16 ">
       
       <!-- first card section -->
        <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
@@ -121,10 +134,11 @@
 
  </main>
  <script src="commonjavascript/utitlites.js"></script>
+ <script src="commonjavascript/setstyle.js"></script>
  <script src="commonjavascript/changepage.js"></script>
  <script src="commonjavascript/addmoney.js"></script>
  
- <script src="commonjavascript/setstyle.js"></script>
+ 
  <script>
   
  </script>
