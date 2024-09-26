@@ -5,6 +5,7 @@ donationTab.addEventListener('click',function(){
     donationTab.classList.remove('border-2')
     document.getElementById('btn-show-history').classList.remove('bg-[#B4F461]', 'text-[#111111]')
     document.getElementById('btn-show-history').classList.add('border-2')
+    
 })
 
 
