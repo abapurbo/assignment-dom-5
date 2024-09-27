@@ -1,32 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 .lexend-fonts {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-#nav-section{
+
+#nav-section {
   background: rgba(247, 235, 219, 0.9);
   backdrop-filter: blur(1px);
-  box-shadow: 0 20px 30px rgba(217, 207, 189, 0.9) ;
- 
+  box-shadow: 0 20px 30px rgba(217, 207, 189, 0.9);
+
 }
-#nav-border{
+
+#nav-border {
   background-color: rgba(192, 182, 182, 0.1);
   backdrop-filter: blur(10px);
-  box-shadow:20px;
+  box-shadow: 20px;
 }
-/* .popup-container{
-  width:400px;
-  background:rgb(255, 255, 255);
-  border-radius:8px;
-  position:absolute;
-  top:0;
-  left:50%;
-  transform:translate(-50%,-50%) scale(0.1);
-  box-shadow:10px 20px 30px 40px 50px  rgba(0, 0, 0, 0.9) ;
-  /* visibility: hidden; */
-  transform:transform 0.4s, top 0.4s;
-  visibility: hidden;
- 
-} */
+
