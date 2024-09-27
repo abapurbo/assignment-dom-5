@@ -1,144 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5</title>
-    <link rel="icon" type="image/x-icon" href="assets/Dom.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5</title>
+  <link rel="icon" type="image/x-icon" href="assets/Dom.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
 
 </head>
+
 <body class="lexend-fonts">
-<header>
-  <nav >
-    <div  id="nav-section" class="navbar z-40   fixed  h-[90px]  flex flex-row justify-between  ">
-      <div class="ml-6 ">
-          <button id="blog-section" class=" px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Blog</button>
-          <button id="home-section" class="hidden px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Home</button>
+  <header>
+    <nav>
+      <div id="nav-section" class="navbar z-40   fixed  h-[90px]  flex flex-row justify-between  ">
+        <div class="ml-6 ">
+          <button id="blog-section"
+            class=" px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Blog</button>
+          <button id="home-section"
+            class="hidden px-8 py-3 rounded-lg text-[20px] w-28 font-semibold text-[#111111] bg-[#B4F461]">Home</button>
         </div>
 
-      <div class=" w-[265px]  flex justify-between flex-row items-center  ">
-      <img class="w-[48px] h-[48px] " src="assets/logo.png" alt="this is logo image">
-       <h3 class="font-bold text-[20px] text-[#111111]">Donate Bangladesh</h3>
+        <div class=" w-[265px]  flex justify-between flex-row items-center  ">
+          <img class="w-[48px] h-[48px] " src="assets/logo.png" alt="this is logo image">
+          <h3 class="font-bold text-[20px] text-[#111111]">Donate Bangladesh</h3>
+        </div>
+
+        <div class="grid grid-flow-col gap-1 mr-7 bg-red-100 p-3 rounded-lg">
+          <img src="assets/coin.png" alt="this is coin">
+          <span id="main-balance" class="font-semibold text-[20px]  text-[#111111]">5500</span><span
+            class="font-semibold text-[20px] text-[#111111]">BDT</span>
+        </div>
       </div>
-    
-      <div class="grid grid-flow-col gap-1 mr-7 bg-red-100 p-3 rounded-lg" >
-        <img src="assets/coin.png" alt="this is coin">
-       <span id="main-balance" class="font-semibold text-[20px]  text-[#111111]">5500</span><span class="font-semibold text-[20px] text-[#111111]">BDT</span>
-      </div>
+
+    </nav>
+    <div id="nav-border" class="fixed z-40 top-[88px] p-8 w-full flex justify-center space-x-2 ">
+      <button id="btn-show-donation"
+        class="bg-[#B4F461] text-[#111111] text-xl font-semibold rounded-lg px-8 py-4 border-2 ">Donation</button>
+      <button id="btn-show-history" class=" text-xl font-semibold rounded-lg px-8 py-4 border-2  ">History</button>
     </div>
-   
-  </nav>
-  <div id="nav-border" class="fixed z-40 top-[88px] p-8 w-full flex justify-center space-x-2 ">
-    <button id="btn-show-donation" class="bg-[#B4F461] text-[#111111] text-xl font-semibold rounded-lg px-8 py-4 border-2 ">Donation</button>
-    <button id="btn-show-history" class=" text-xl font-semibold rounded-lg px-8 py-4 border-2  ">History</button>
-  </div>
-  <hr class="border-[1px] relative top-40 z-30 w-full ">
-   
-</header>
+    <hr class="border-[1px] relative top-40 z-30 w-full ">
+
+  </header>
 
 
 
-<!-- main section -->
- <main class="flex justify-center  pt-48 " >
-  <!-- home page -->
+  <!-- main section -->
+  <main class="flex justify-center  pt-48 ">
+    <!-- home page -->
 
-   <section id="home-page-section" class="hidden z-30 w-[80%] h-[100%] flex flex-col  space-y-[0.5px] my-10 ">
-    <h1 class="text-4xl font-semibold my-8">Important FAQ</h1>
-    <div class="collapse collapse-arrow bg-base-200 border-2">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-      <div class="collapse-content">
-        <p class="text-[#111111B3]">The Document Object Model (DOM) is a programming interface that represents the structure of a webpage as a tree of objects, allowing developers to interact with and manipulate HTML and XML documents dynamically using languages like JavaScript. It organizes documents hierarchically, enabling real-time changes such as adding, removing, or modifying elements. The DOM also supports event handling, which allows developers to respond to user interactions like clicks and key presses. It is language-agnostic, meaning it can be accessed through various programming languages, and it ensures cross-browser compatibility, providing consistent behavior across different web browsers. Overall, the DOM is essential for creating interactive and dynamic web applications.</p>
+    <section id="home-page-section" class="hidden z-30 w-[80%] h-[100%] flex flex-col  space-y-[0.5px] my-10 ">
+      <h1 class="text-4xl font-semibold my-8">Important FAQ</h1>
+      <div class="collapse collapse-arrow bg-base-200 border-2">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p class="text-[#111111B3]">The Document Object Model (DOM) is a programming interface that represents the
+            structure of a webpage as a tree of objects, allowing developers to interact with and manipulate HTML and
+            XML documents dynamically using languages like JavaScript. It organizes documents hierarchically, enabling
+            real-time changes such as adding, removing, or modifying elements. The DOM also supports event handling,
+            which allows developers to respond to user interactions like clicks and key presses. It is
+            language-agnostic, meaning it can be accessed through various programming languages, and it ensures
+            cross-browser compatibility, providing consistent behavior across different web browsers. Overall, the DOM
+            is essential for creating interactive and dynamic web applications.</p>
+        </div>
       </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 border-2">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-      <div class="collapse-content">
-        <p class="text-[#111111B3]">You can select an element from the DOM using various JavaScript methods. The `getElementById` method allows you to select an element by its unique ID, while `getElementsByClassName` selects all elements with a specified class name and returns a live HTMLCollection. Similarly, `getElementsByTagName` selects all elements of a given tag name, also returning a live HTMLCollection. For more flexible selection, `querySelector` allows you to select the first element that matches a specified CSS selector, and `querySelectorAll` selects all matching elements, returning a static NodeList. These methods enable effective access and manipulation of DOM elements, which is essential for dynamic web development.</p>
+      <div class="collapse collapse-arrow bg-base-200 border-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-[#111111B3]">You can select an element from the DOM using various JavaScript methods. The
+            `getElementById` method allows you to select an element by its unique ID, while `getElementsByClassName`
+            selects all elements with a specified class name and returns a live HTMLCollection. Similarly,
+            `getElementsByTagName` selects all elements of a given tag name, also returning a live HTMLCollection. For
+            more flexible selection, `querySelector` allows you to select the first element that matches a specified CSS
+            selector, and `querySelectorAll` selects all matching elements, returning a static NodeList. These methods
+            enable effective access and manipulation of DOM elements, which is essential for dynamic web development.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 border-2">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">what is event delegation the context of the DOM, and why is it useful?</div>
-      <div class="collapse-content">
-        <p class="text-[#111111B3]">Event delegation is a technique in the context of the DOM that involves attaching a single event listener to a parent element instead of adding separate listeners to each child element. When an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event. This approach is useful for several reasons: it improves performance by reducing the number of event listeners, which is particularly beneficial when dealing with many child elements; it simplifies the handling of dynamically added content, as new elements automatically inherit the parent's event listener; and it leads to cleaner, more maintainable code by centralizing event management in one place. Overall, event delegation enhances efficiency and makes it easier to manage events in dynamic web applications.</p>
+      <div class="collapse collapse-arrow bg-base-200 border-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">what is event delegation the context of the DOM, and why is it
+          useful?</div>
+        <div class="collapse-content">
+          <p class="text-[#111111B3]">Event delegation is a technique in the context of the DOM that involves attaching
+            a single event listener to a parent element instead of adding separate listeners to each child element. When
+            an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event. This
+            approach is useful for several reasons: it improves performance by reducing the number of event listeners,
+            which is particularly beneficial when dealing with many child elements; it simplifies the handling of
+            dynamically added content, as new elements automatically inherit the parent's event listener; and it leads
+            to cleaner, more maintainable code by centralizing event management in one place. Overall, event delegation
+            enhances efficiency and makes it easier to manage events in dynamic web applications.</p>
+        </div>
       </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 border-2">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-      <div class="collapse-content">
-        <p class="text-[#111111B3]">You can manipulate an element's attributes and styles in the DOM using JavaScript in several ways. To get an attribute's value, you can use the `getAttribute` method, while `setAttribute` allows you to change or add an attribute. To remove an attribute, you can use `removeAttribute`, and certain attributes can also be accessed directly as properties, such as changing the ID with `element.id`. For styling, you can modify inline styles through the `style` property, setting styles like background color and font size directly. You can also apply multiple styles at once using `Object.assign`. To remove a style, simply set it to an empty string. These methods enable dynamic and efficient changes to attributes and styles, enhancing the interactivity of web pages.</p>
+      <div class="collapse collapse-arrow bg-base-200 border-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using
+          the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-[#111111B3]">You can manipulate an element's attributes and styles in the DOM using JavaScript
+            in several ways. To get an attribute's value, you can use the `getAttribute` method, while `setAttribute`
+            allows you to change or add an attribute. To remove an attribute, you can use `removeAttribute`, and certain
+            attributes can also be accessed directly as properties, such as changing the ID with `element.id`. For
+            styling, you can modify inline styles through the `style` property, setting styles like background color and
+            font size directly. You can also apply multiple styles at once using `Object.assign`. To remove a style,
+            simply set it to an empty string. These methods enable dynamic and efficient changes to attributes and
+            styles, enhancing the interactivity of web pages.</p>
+        </div>
       </div>
-    </div>
-    
-   
 
-   </section>
-  <!-- donation section -->
+
+
+    </section>
+    <!-- donation section -->
     <section id="donation-section" class="w-[80%] h-[100%] flex flex-col mt-16 ">
-      
+
       <!-- first card section -->
-       <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
-          <div class="grid grid-flow-col grid-cols-2 h-[100%] gap-8">
-            <div >
-              <img class="h-[100%]" src="assets/noakhali.png" alt="this is a noakhali image">
-            </div>
-            <div class="space-y-4">
-              <button class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
-                <span>
+      <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
+      <div class="grid grid-flow-col grid-cols-2 h-[100%] gap-8">
+          <div>
+            <img class="h-[100%]" src="assets/noakhali.png" alt="this is a noakhali image">
+          </div>
+          <div class="space-y-4">
+            <button
+              class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
+              <span>
                 <img src="assets/coin.png" alt="">
               </span>
 
-              <p id="balance-1">100</p><p>BDT</p>
+              <p id="balance-1">100</p>
+              <p>BDT</p>
             </button>
-            <h1 class="text-xl text-[#111111] font-bold">Donate for Flood at Noakhali, Bangladesh</h1>  
-            <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="input-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]" type="text" placeholder="Write Donation Amount">
-              <button id="first-add-money" class="bg-[#B4F461] w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now</button>
-             
-              <dialog id="my_modal_1" class="modal  ">
-                <div class="modal-box flex flex-col justify-center items-center space-y-4">
-                  <h3 class="text-4xl font-bold ">Congrates!</h3>
-                  <img class="w-10 h-10" src="assets/coin.png" alt="this is a coin image">
-                  <p class="py-4 text-xl text-[#111111B3]">You Have Donated for Humankind</p>
-                  <h1 class="text-2xl font-bold text-[[#111111]">Successfully</h1>
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <!-- if there is a button in form, it will close the modal -->
-                      <button class="btn">close confirmation</button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-          
-       </section>  
+            <h1 class="text-xl text-[#111111] font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant
+              damage to homes infrastructure. Your donation will help provide essential supplies and to those affected
+              by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+              relief efforts and making a positive impact on the lives of those in need.</p>
+            <input id="input-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]"
+              type="text" placeholder="Write Donation  Amount">
+            <button id="first-add-money"
+              class="bg-[#B4F461] w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now</button>
 
-       <!--  2nd card section -->
-       <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
-          <div class="grid grid-flow-col grid-cols-2 h-[100%] gap-8">
-            <div >
-              <img class="h-[100%]" src="assets/feni.png" alt="this is a noakhali image">
-            </div>
-            <div class="space-y-4">
-              <button class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
-                <span>
-                <img src="assets/coin.png" alt="">
-              </span>
-
-              <p id="balance-2"> 600</p><span>BDT</span>
-            </button>
-            <h1 class="text-xl text-[#111111] font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>  
-            <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="input-2-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]" type="text" placeholder="Write Donation Amount">
-            <button id="second-add-money"  class=" bg-[#B4F461]  w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now  </button>
             <dialog id="my_modal_1" class="modal  ">
               <div class="modal-box flex flex-col justify-center items-center space-y-4">
                 <h3 class="text-4xl font-bold ">Congrates!</h3>
@@ -153,31 +161,36 @@
                 </div>
               </div>
             </dialog>
-              
-          
-          </div>
-          </div>
-       </section>
+          </div>   
+        </div>
+      </section>
 
-       <!-- 3rd card section -->
-       <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
-          <div class="grid grid-flow-col  grid-cols-2 h-[100%] gap-8">
-            <div >
-              <img class="h-[100%]" src="assets/quota-protest.png" alt="this is a noakhali image">
-             </div>
-             <div class="space-y-4">
-              <button class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
-                <span>
+      <!--  2nd card section -->
+      <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
+        <div class="grid lg:grid-flow-col lg:grid-cols-2 h-[100%] gap-8">
+          <div>
+            <img class="h-[100%]" src="assets/feni.png" alt="this is a noakhali image">
+          </div>
+          <div class="space-y-4">
+            <button
+              class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
+              <span>
                 <img src="assets/coin.png" alt="">
-               </span>
+              </span>
 
-               <p id="balance-3">2400</p><span>BDT</span>
-             </button>
-             <h1 class="text-xl text-[#111111] font-bold">Aid for Injured in the Quota Movement</h1>  
-             <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-             <input id="input-3-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]" type="text" placeholder="Write Donation Amount">
-             <button id="third-add-money" class="bg-[#B4F461] w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now</button>
-             <dialog id="my_modal_1" class="modal  ">
+              <p id="balance-2"> 600</p><span>BDT</span>
+            </button>
+            <h1 class="text-xl text-[#111111] font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant
+              damage to homes infrastructure. Your donation will help provide essential supplies and to those affected
+              by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+              relief efforts and making a positive impact on the lives of those in need.</p>
+            <input id="input-2-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]"
+              type="text" placeholder="Write Donation Amount">
+            <button id="second-add-money"
+              class=" bg-[#B4F461]  w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now
+            </button>
+            <dialog id="my_modal_1" class="modal  ">
               <div class="modal-box flex flex-col justify-center items-center space-y-4">
                 <h3 class="text-4xl font-bold ">Congrates!</h3>
                 <img class="w-10 h-10" src="assets/coin.png" alt="this is a coin image">
@@ -191,30 +204,75 @@
                 </div>
               </div>
             </dialog>
-        
-            </div>
+
+
           </div>
-       </section>
-         
-           
-           
-           
-           
-        
+        </div>
+      </section>
+
+      <!-- 3rd card section -->
+      <section class=" border-2 my-5 p-8  h-[460px] rounded-2xl ">
+        <div class="grid grid-flow-col  grid-cols-2 h-[100%] gap-8">
+          <div>
+            <img class="h-[100%]" src="assets/quota-protest.png" alt="this is a noakhali image">
+          </div>
+          <div class="space-y-4">
+            <button
+              class="grid grid-flow-col gap-2 px-3 py-[8px] text-[18px] font-bold bg-red-50 rounded-lg bg-[#1111110D] radius-lg">
+              <span>
+                <img src="assets/coin.png" alt="">
+              </span>
+
+              <p id="balance-3">2400</p><span>BDT</span>
+            </button>
+            <h1 class="text-xl text-[#111111] font-bold">Aid for Injured in the Quota Movement</h1>
+            <p class="text-[16px] font-light text-[#111111B3]"> The recent floods in Noakhali have caused significant
+              damage to homes infrastructure. Your donation will help provide essential supplies and to those affected
+              by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+              relief efforts and making a positive impact on the lives of those in need.</p>
+            <input id="input-3-add-money" class="w-[100%] p-3 rounded-lg border border-1 border-[rgba(17, 17, 17, 0.1)]"
+              type="text" placeholder="Write Donation Amount">
+            <button id="third-add-money"
+              class="bg-[#B4F461] w-full px-3 py-3 rounded-lg font-semibold text-xl text-[#111111]">Donate Now</button>
+            <dialog id="my_modal_1" class="modal  ">
+              <div class="modal-box flex flex-col justify-center items-center space-y-4">
+                <h3 class="text-4xl font-bold ">Congrates!</h3>
+                <img class="w-10 h-10" src="assets/coin.png" alt="this is a coin image">
+                <p class="py-4 text-xl text-[#111111B3]">You Have Donated for Humankind</p>
+                <h1 class="text-2xl font-bold text-[[#111111]">Successfully</h1>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">close confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
     </section>
-      
+
     <!-- </section> -->
-     <!-- history section -->
-     <section id="history-section" class="hidden mt-28 space-y-7">
- 
-     </section>
-  
+    <!-- history section -->
+    <section id="history-section" class="hidden mt-28 mb-14 space-y-7">
+
+    </section>
+
   </main>
-   
- <script src="commonjavascript/utitlites.js"></script>
- <script src="commonjavascript/addmoney.js"></script>
- <script src="commonjavascript/changepage.js"></script>
- <script src="commonjavascript/setstyle.js"></script>
- 
+
+  <script src="commonjavascript/utitlites.js"></script>
+  <script src="commonjavascript/addmoney.js"></script>
+  <script src="commonjavascript/changepage.js"></script>
+  <script src="commonjavascript/setstyle.js"></script>
+
 </body>
+
 </html>

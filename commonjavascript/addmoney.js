@@ -73,7 +73,7 @@ document.getElementById('second-add-money').addEventListener('click',function(){
           document.getElementById('history-section').appendChild(div)
           const p=document.createElement('p');
           p.classList.add('text-[20px]','font-semibold','text-[#111111')
-          p.innerText=`${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh`
+          p.innerText=`${addMoney} Taka is Donated for Flood Relief in Feni,Bangladesh`
          div.appendChild(p)
 
          //Time and date sete in your history section
@@ -121,7 +121,7 @@ document.getElementById('third-add-money').addEventListener('click',function(){
         document.getElementById('history-section').appendChild(div)
         const p=document.createElement('p');
         p.classList.add('text-[20px]','font-semibold','text-[#111111')
-        p.innerText=`${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh`
+        p.innerText=`${addMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`
        div.appendChild(p)
 
        //Time and date sete in your history section
